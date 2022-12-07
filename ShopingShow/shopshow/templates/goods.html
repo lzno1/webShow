@@ -1,0 +1,125 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <!-- <link rel="stylesheet" href="{% static 'css/home.css' %}"> -->
+    <link rel="stylesheet" href="{% static 'css/goods.css' %}">
+
+    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
+    <script src="{% static 'js/jquery-3.3.1.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <ul class="nav ">
+            <li class="nav-item">
+                <a class="navbar-brand" href="{% url 'home' %}">
+                    <img src="{% static 'img/logo.png' %}", height="30", alt="logo">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="{% url 'home' %}">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'goods' %}">Goods</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="{% url 'store' %}">Store</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="{% url 'contact' %}">Contact</a>
+            </li>
+        </ul>
+
+        <form action="", class="form-inline ml-auto">
+            <input type="text" class="form-control mr-sm-2" placeholder="请输入订单号">
+            <button class="btn btn-outline-secondary my-2",type="submit">search</button>
+        </form>
+    </nav>
+
+
+    <div class='container' id="aboutInfo">
+        <div class="row">
+            <div class="col-lg-9" id="container-row-left">
+                
+                <h2 class="item_title mx-auto">商品详情页</h2>
+                <div class="row">
+                    <div class="col-lg-7" id="container-row-left">
+                        <img src="{% static 'img/goods/goods01.jpg' %}", class='show_img', height="700", alt="logo">
+                    </div>
+                    <div class="col-lg-5" >
+                        <div class="shop_name">
+                            <p>商品名称：日本进口缝隙收纳架厨房置物架冰箱夹缝车可移动多层落地超窄柜</p>
+                        </div>
+                        <div class="shop_name">
+                            <p>价格：10$</p>
+                        </div>
+                        <div class="shop_name">
+                            <p>下单时间：2022-11-11</p>
+                        </div>
+                        <div class="shop_name">
+                            <p>发货时间：2022-11-11</p>
+                        </div>
+                        <div class="shop_name">
+                            <p>订单编号：123456789</p>
+                        </div>
+                        <div class="shop_name">
+                            <p>平台信息：123456789</p>
+                        </div>
+                        <div class="shop_name">
+                            <p>其他信息：123456789</p>
+                        </div>
+                        <div class="shop_name">
+                            <p>其他信息：123456789</p>
+                        </div>
+                        <div class="shop_name">
+                            <p>其他信息：123456789</p>
+                        </div>
+                        <div class="shop_name">
+                            <p>其他信息：123456789</p>
+                        </div>
+                        <div class="shop_name">
+                            <p>其他信息：123456789</p>
+                        </div>
+                        <div class="shop_name">
+                            <p>其他信息：123456789</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3" id="container-row-right">
+                <h2 class="item_title mx-auto">大货安排</h2>
+                <ul class="shop_info_ul">
+                    <li class="shop_info_li">
+                        <p>第一周</p>
+                        <p>行程安排</p>
+                        <p>时间安排</p>
+                    </li>
+                    <li class="shop_info_li">
+                        <p>第二周</p>
+                        <p>行程安排</p>
+                        <p>时间安排</p>
+                    </li>
+                    <li class="shop_info_li">
+                        <p>第三周</p>
+                        <p>行程安排</p>
+                        <p>时间安排</p>
+                    </li>
+                    <li class="shop_info_li">
+                        <p>最终确定</p>
+                        <p>确认签收</p>
+                        <p>客户反馈</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
